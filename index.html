@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__avatar"></div>
+      <div class="header__contacts">
+        <h1 class="header__fullname">Eugene Bykovsky</h1>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="https://github.com/Eugene-Bykovsky" target="blank">GitHub</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Facebook</a>
+            <span class="menu__separator">/</span>
+            <a class="menu__link" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="expansion-panel">
+        <div class="expansion-panel__head">
+          <h2 class="expansion-panel__name">Education</h2>
+          <button class="expansion-panel__btn">◄</button>
+        </div>
+        <ul class="expansion-panel__content">
+          <li class="expansion-panel__item">
+            <p class="subhead">School</p>
+            <p class="years">1998-2009</p>
+          </li>
+          <li class="expansion-panel__item">
+            <p class="subhead">University</p>
+            <p class="years">2009-2014</p>
+          </li>
+          <li class="expansion-panel__item">
+            <p class="content__subhead">RSSchool</p>
+            <p class="content__years">2019-2020</p>
+          </li>
+        </ul>
+      </section>
+      <section class="slider">
+        <div class="slider__head">
+          <h2 class="slider__name">Projects</h2>
+        </div>
+        <div id="slider" class="slider__content">
+          <button data-name="prev-slide" class="slider__btn slider__btn_prev">
+            <img class="slider__img slider__img_prev" src="./assets/images/left-squared.png" />
+          </button>
+          <div class="slides-wrapper">
+            <div id="slides" class="collection">
+              <div class="slide slide_theyalow">
+                <div class="slide__description">
+                  <div class="project-name">Theyalow</div>
+                  <ul class="project-points">
+                    <li class="project-points__item">Adaptive layout</li>
+                    <li class="project-points__item">Pixel perfect</li>
+                  </ul>
+                  <div class="project-help">
+                    Click on image to see the project
+                  </div>
+                </div>
+                <a class="slide__link" href="https://eugene-bykovsky.github.io/theyalow/" class="screen">
+                  <img class="slide__img" src="./assets/images/theyalow.png"" alt=" theyalow">
+                </a>
+              </div>
+              <div class="slide slide_repair">
+                <div class="slide__description">
+                  <div class="project-name">
+                    Design Repair Project
+                  </div>
+                  <ul class="project-points">
+                    <li class="project-points__item">
+                      Responsive
+                    </li>
+                  </ul>
+                  <div class="project-help">
+                    Click on image to see the project
+                  </div>
+                </div>
+                <a class="slide__link" href="https://eugene-bykovsky.github.io/repair-design-project/" class="screen">
+                  <img class="slide__img" src="./assets/images/repair.png"" alt=" theyalow">
+                </a>
+              </div>
+            </div>
+          </div>
+          <button data-name="next-slide" class="slider__btn slider__btn_next">
+            <img class="slider__img slider__img_next" src="./assets/images/left-squared.png" />
+          </button>
+        </div>
+      </section>
+      <section class="swiper">
+        <button id="swiperBtn" class="swiper__btn">Show project description</button>
+        <div class="swiper__content">
+          <div id="swiperSlides" class="project-wrapper">
+            <a id="theyalow" class="project project_theyalow" href="https://eugene-bykovsky.github.io/theyalow/">
+              <div class="slide__description">
+                <div class="project-name">Theyalow</div>
+                <ul class="project-points">
+                  <li class="project-points__item">Adaptive layout</li>
+                  <li class="project-points__item">Pixel perfect</li>
+                </ul>
+                <div class="project-help">
+                  Click on image to see the project
+                </div>
+              </div>
+              <img class="slide__img" src="./assets/images/theyalow.png"" alt=" theyalow">
+            </a>
+            <a id="repair" class="project project_repair"
+              href="https://eugene-bykovsky.github.io/repair-design-project/">
+              <div class="slide__description">
+                <div class="project-name">
+                  Design Repair Project
+                </div>
+                <ul class="project-points">
+                  <li class="project-points__item">
+                    Responsive
+                  </li>
+                </ul>
+                <div class="project-help">
+                  Click on image to see the project
+                </div>
+              </div>
+              <img class="slide__img" src="./assets/images/repair.png"" alt=" theyalow">
+            </a>
+          </div>
+        </div>
+        <div class="swiper__help"></div>
+      </section>
+    </main>
+  </div>
+  <script src="classes.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
