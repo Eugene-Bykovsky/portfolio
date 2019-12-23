@@ -1,1 +1,1 @@
-https://Eugene-Bykovsky.github.io/rsschool-cv/cv
+https://eugene-bykovsky.github.io/portfolio/
